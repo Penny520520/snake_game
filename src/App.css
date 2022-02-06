@@ -1,0 +1,179 @@
+.App {
+  text-align: center;
+}
+
+/* h1 {
+  margin-top: 40px;
+} */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* score */
+.is-flex {
+  display: inline-flex;
+}
+
+
+/* Snack Game */
+.snake-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.headline {
+  margin-bottom: 10px;
+}
+.chess-board{
+  width: 400px;
+  height: 400px;
+  opacity: 0.7;
+}
+.cb-row,
+.cb-column {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+.cb-r-square {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  top:0px;
+  opacity: 0.7;
+}
+.start {
+  margin-top: 20px;
+  padding: 5px;
+}
+.chess-board {
+  overflow: hidden;
+  position:relative;    
+  border: 3px solid #3A6B35;
+}
+.snake-body {
+  background-color: #255515;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index:20;
+}
+
+.body2 {
+  left: -40px;
+  top: 0;
+}
+.body1 {
+  left: -20px;
+  top: 0;
+}
+.snake-head {
+  background-color: transparent;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index:20;
+}
+
+/* food */
+.cb-food {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+}
+
+/* Gameover */
+.gameover {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -100%);
+    font-size: 50px;
+}
+
+/* start */
+.startBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 30px 8px;
+  background-color: #3A6B35;
+  background-size: 200% auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #929292;
+  background-image: linear-gradient(to right, #3A6B35 0%, #6fc27c 51%, #3A6B35 100%);
+  border: none;
+  transition: background-position 0.5s;
+}
+.playBtn {
+  width: 25px;
+  height: auto;
+}
+
+.startBtn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  font-size: 30px;
+  color: red;
+}
+
+/* snake ui */
+.snake-head-img {
+  position: absolute;
+  left: -2px;
+  top: -6px;
+  height: 40px;
+}
+.apple-img {
+  width: 20px;
+}
