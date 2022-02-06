@@ -1,1 +1,1 @@
-# reactJs_snake_game
+# reactjs_snake_game
